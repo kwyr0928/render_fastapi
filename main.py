@@ -2,6 +2,8 @@ from typing import Optional
 
 from fastapi import FastAPI
 
+import random  # randomライブラリを追加
+
 app = FastAPI()
 
 
@@ -28,4 +30,4 @@ def omikuji():
         "大凶"
     ]
 
-    return omikuji_list[random.randrange(10)] 
+    return omikuji_list[random.randrange(10)]
